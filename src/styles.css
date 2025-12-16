@@ -1,0 +1,397 @@
+:root {
+  --icbc-red: #e60023;
+  --icbc-dark-red: #b3001b;
+  --icbc-soft-red: #ffe5e7;
+  --bg-soft: #f8f3f2;
+  --text-main: #181818;
+  --text-muted: #777;
+  --card-bg: #ffffff;
+  --border-soft: #e5d9d6;
+  --radius-lg: 18px;
+  --radius-md: 12px;
+  --radius-pill: 999px;
+  --shadow-soft: 0 8px 24px rgba(0, 0, 0, 0.06);
+  --font-main: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
+    "Helvetica Neue", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-main);
+  background-color: var(--bg-soft);
+  color: var(--text-main);
+}
+
+/* Layout tipo app mobile centrada */
+
+.app-root {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.app-shell {
+  width: 100%;
+  max-width: 480px;
+  min-height: 100vh;
+  background-color: var(--bg-soft);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Pantallas */
+
+.screen {
+  flex: 1;
+  padding: 20px 18px 90px;
+}
+
+.screen-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.back-button {
+  border: none;
+  background: none;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+.screen-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+/* Logo + título */
+
+.logo-box {
+  display: flex;
+  justify-content: center;
+  padding: 32px 0 8px;
+}
+
+.logo-placeholder {
+  width: 72px;
+  height: 72px;
+  border-radius: 20px;
+  background: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffd27b;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin: 4px 0 24px;
+}
+
+/* Formularios */
+
+.label {
+  font-size: 0.9rem;
+  margin-bottom: 4px;
+}
+
+.input-group {
+  margin-bottom: 16px;
+}
+
+.input {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-soft);
+  font-size: 0.95rem;
+  background-color: #fff;
+  outline: none;
+}
+
+.input::placeholder {
+  color: var(--text-muted);
+}
+
+/* Botones */
+
+.primary-button {
+  width: 100%;
+  padding: 14px;
+  border-radius: var(--radius-lg);
+  border: none;
+  background-color: var(--icbc-red);
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: var(--shadow-soft);
+}
+
+.primary-button:active {
+  transform: scale(0.98);
+  background-color: var(--icbc-dark-red);
+}
+
+.secondary-button {
+  width: 100%;
+  padding: 14px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--icbc-red);
+  background-color: #fff;
+  color: var(--icbc-red);
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* Texto auxiliar */
+
+.link-text {
+  font-size: 0.85rem;
+  text-align: center;
+  margin-top: 12px;
+  color: var(--icbc-red);
+  cursor: pointer;
+}
+
+.small-muted {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+/* Tarjetas / listas */
+
+.card {
+  background-color: var(--card-bg);
+  border-radius: var(--radius-lg);
+  padding: 16px;
+  box-shadow: var(--shadow-soft);
+  border: 1px solid var(--border-soft);
+}
+
+.row-space-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.amount-big {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.badge-soft {
+  padding: 4px 10px;
+  border-radius: var(--radius-pill);
+  background-color: var(--icbc-soft-red);
+  color: var(--icbc-red);
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.list {
+  margin-top: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.list-item {
+  background-color: #fff;
+  border-radius: var(--radius-lg);
+  padding: 10px 14px;
+  border: 1px solid var(--border-soft);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list-item-col {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.list-item-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.list-item-sub {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.amount-negative {
+  color: #b3261e;
+  font-weight: 600;
+}
+
+.amount-positive {
+  color: #138a3b;
+  font-weight: 600;
+}
+
+.chip {
+  padding: 4px 8px;
+  border-radius: var(--radius-pill);
+  font-size: 0.75rem;
+}
+
+.chip-green {
+  background-color: #e5f7e9;
+  color: #138a3b;
+}
+
+.chip-red {
+  background-color: #ffe5e5;
+  color: #b3261e;
+}
+
+.section-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 18px 0 8px;
+}
+
+/* Toggles fake */
+
+.toggle-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.fake-toggle {
+  width: 46px;
+  height: 26px;
+  border-radius: 13px;
+  background: #ddd;
+  position: relative;
+}
+
+.fake-toggle-thumb {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* Nav bottom simple */
+
+.nav-bottom {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 480px;
+  background: #ffffff;
+  border-top: 1px solid var(--border-soft);
+  display: flex;
+  justify-content: space-around;
+  padding: 8px 12px 10px;
+}
+
+.nav-button {
+  flex: 1;
+  text-align: center;
+  font-size: 0.75rem;
+  cursor: pointer;
+  color: var(--text-muted);
+}
+
+.nav-button-active {
+  color: var(--icbc-red);
+  font-weight: 600;
+}
+
+/* Mensajes */
+
+.danger-text {
+  font-size: 0.85rem;
+  color: #b3261e;
+}
+
+/* Pequeñas barras fake para reportes */
+
+.bar-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 4px 0;
+}
+
+.bar-track {
+  flex: 1;
+  height: 6px;
+  border-radius: 4px;
+  background: #eee;
+  margin-left: 8px;
+}
+
+.bar-fill {
+  height: 6px;
+  border-radius: 4px;
+  background: var(--icbc-red);
+}
+
+/* Botones tipo píldora (última semana / último mes) */
+
+.pill-switch {
+  display: inline-flex;
+  padding: 3px;
+  border-radius: var(--radius-pill);
+  background: #eee;
+  margin-top: 12px;
+}
+
+.pill-switch button {
+  border: none;
+  background: transparent;
+  padding: 6px 10px;
+  border-radius: var(--radius-pill);
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.pill-switch button.active {
+  background: var(--icbc-red);
+  color: #fff;
+}
+
+/* Botones pequeños en tarjetas (Aprobar / Rechazar) */
+
+.small-button {
+  padding: 6px 12px;
+  border-radius: var(--radius-pill);
+  border: none;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.small-button.secondary {
+  background: #ffffff;
+  border: 1px solid var(--border-soft);
+}
+
+.small-button.primary {
+  background: var(--icbc-red);
+  color: #fff;
+}
