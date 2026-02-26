@@ -1,16 +1,25 @@
-# React + Vite
+# 🏦 ICBC Kids Prototype - Banking Services Optimization
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### 🌟 Overview
+This project is a **functional prototype developed in React** designed to modernize the digital experience for ICBC bank users. The proposal focuses on financial inclusion and process improvement for new user segments through a high-performance interface.
 
-Currently, two official plugins are available:
+### 🛠️ Business Problem (Pain Points)
+As a Computer Engineering student focused on innovation, I identified the following technical and business challenges:
+* **UX Friction**: Complex interfaces that hinder technology adoption for younger or new segments.
+* **Scalability Needs**: The system required a modular architecture to support future integrations and features.
+* **Communication Gap**: The need to translate complex functional requirements into a tangible, high-impact technical solution.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 💡 Solution & Applied Skills
+To address these challenges, I implemented a solution that highlights both my technical and management competencies:
+* **Frontend Development**: Leveraged **React + Vite** to ensure ultra-fast Hot Module Replacement (HMR) and a seamless user experience.
+* **Component-Based Architecture**: Developed a clean, reusable code structure, facilitating long-term maintenance and scalability.
+* **Project Management Mindset**: Successfully translated business goals into technical milestones, ensuring clear documentation of the development lifecycle.
 
-## React Compiler
+### 🚀 Tech Stack & Tools
+* [cite_start]**Core**: React[cite: 28].
+* **Build Tool**: Vite.
+* [cite_start]**Management**: Agile Methodologies (Scrum/Kanban) applied throughout the prototype lifecycle[cite: 24].
+* [cite_start]**Version Control**: Git/GitHub[cite: 28].
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+*This project reflects my ability to identify critical pain points and resolve them through technology, combining technical rigor with strategic vision.*
