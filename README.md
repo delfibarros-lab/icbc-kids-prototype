@@ -1,4 +1,4 @@
-# 🏦 ICBC Kids Prototype - Banking Services Optimization
+# 🏦 Prototype - Banking Services Optimization
 
 ### 🌟 Overview
 This project is a **functional prototype developed in React** designed to modernize the digital experience for ICBC bank users. The proposal focuses on financial inclusion and process improvement for new user segments through a high-performance interface.
